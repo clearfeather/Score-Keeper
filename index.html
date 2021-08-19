@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" href="#">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Score Keeper
+      </h1>
+      
+        <img class="image is-128x128" src="https://images.unsplash.com/photo-1626890631686-0b3113188c48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+      <h3 class="title is-2"><span id="scoreOne">0</span> to <span class="topScore">0</span></h3> 
+      <p class="subtitle">
+        Use the buttons to keep <strong>score</strong>.</p>
+      <p class="block dropdown">
+          <label for="topScore">Playing to</label>
+        <select name="topScore" id="topScore" class="topScore">
+          <option value="3" class="dropdown-item">3</option>
+          <option value="6" class="dropdown-item">6</option>
+          <option value="9" class="dropdown-item">9</option>
+          <option value="13" class="dropdown-item">13</option>
+        </select>
+    </p>
+    <progress class="progress" value="15" max="100">15%</progress>
+      <button class="button is-primary">+1 Player One</button>
+      <button class="button is-link">+1 Player Two</button>
+      <button class="button is-danger">Reset</button>
+    </div>
+  </section>
+  <script src="app.js"></script>
+  </body>
+</html>
